@@ -23,7 +23,7 @@ import com.lamia.entity.Users;
 public class Registration {
 
 	@RequestMapping(value = "/Registration", method = RequestMethod.POST)
-	public void RegistrationPost(HttpServletRequest request, HttpSession session, HttpServletResponse response) {
+	public String RegistrationPost(HttpServletRequest request, HttpSession session, HttpServletResponse response) {
 //dsfsdfsd
 		if (Validation.checkLogin(request.getParameter("registration-login"))) {
 			Session hibernateSession = HibernateUtil.getSessionFactory().openSession();
@@ -58,11 +58,13 @@ public class Registration {
 			du.insert(new Users(request.getParameter("registration-login"), request.getParameter("registration-password"),
 					request.getParameter("registration-email")));
 		}
-		try {
+		/*try {
 			response.sendRedirect("Registration");
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		}*/
+
+        return "redirect:Registration";
 	}
 	
 
