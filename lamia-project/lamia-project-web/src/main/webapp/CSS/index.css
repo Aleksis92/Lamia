@@ -1,0 +1,357 @@
+body {
+	margin: 0;
+}
+
+#header {
+	position: fixed;
+	background-image: url(http://lifeinjapan.ru/i/background-00.jpg);
+	background-size: cover;
+	min-width:1000px;
+	min-height:145px;
+	width: 100%;
+	height: 20%;
+	z-index: 10;	
+}
+
+#overlay {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height:35%;
+	background: #141412;
+	opacity: 0.5;
+}
+
+.overlay-link {
+	position: absolute;
+	font-family: GothicI;
+	font-size: 40px;
+	top: 10%;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+#overlay-link1 {
+	left: 0;
+	z-index:20
+}
+
+#overlay-link2 {
+	left: 80%;
+	z-index:20
+}
+
+#overlay-buttons {
+	position: relative; 
+	top:0;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #141412;
+	width: 1000px;
+	height: 100%;	
+}
+
+#menu {
+	position: relative;
+	top:20%;
+	background-color: #FFFFFF;
+	width: 100%;
+	min-height: 2000px;
+	height: 70%;
+	float: left;
+}
+
+#moderators-menu {
+	position: relative;
+	top:0;
+	margin-left: 50%;
+	margin-right: 0;
+	background-color: #e4ffb4;
+	width: 50%;
+	min-width: 500px;
+	min-height: 2000px;
+	height: 100%;
+}
+
+#moderators-news {
+	position: relative;
+	top: 0;
+	margin-left: 0;
+	margin-right: 50%;
+	background-color: #b8e9ff;
+	width: 50%;
+	min-width: 500px;
+	min-height: 2000px;
+	height: 100%;
+}
+
+#info {
+	position: relative; 
+	top:0;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #EFEFEF;
+	width: 1000px;
+	height: 100%;
+	min-height: 2000px;
+}
+
+
+
+#footer {
+	clear: both;
+	position: relative;
+	top:20%;
+	background-color: #F9F9F9;
+	width: 100%;
+	height:10%;
+	z-index: 15;
+}
+
+
+#button-window-autorization {
+	position:relative;
+	left: 70%;
+	font-family: GothicI;
+}
+
+#button-personal-room {
+    position:relative;
+    left: 70%;
+    font-family: GothicI;
+}
+
+#wrap{
+	display: none;
+	opacity: 0.8;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 16px;
+	background-color: rgba(1, 1, 1, 0.725);
+	z-index: 100;
+	overflow: auto;
+}
+	
+#window{
+	width: 20%;
+	height: 35%;
+	margin: 50px auto;
+	display: none;
+	background: #fff;
+	z-index: 200;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding: 16px;
+	border-radius: 50px;
+	min-height:400px;
+	min-width:700px;
+}
+
+#autorization-form {
+	position: absolute;
+	top: 0;
+	left: 5%;
+	width: 45%;
+	height: 100%;
+	border-right: 1px solid;
+}
+	
+#registration-form {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 45%;
+	height: 100%;
+	border-left: 1px solid;
+}
+
+.content-autorization {
+	position: absolute;
+	font-family: GothicI;
+	font-size: 20px;
+	left:5%
+}
+
+.content-registration {
+	position: absolute;
+	font-family: GothicI;
+	font-size: 20px;
+	left:15%
+}
+
+.autorization-label {
+	position: absolute;
+	font-family: GothicI;
+	top: 5%;
+	font-size: 40px;
+}
+
+#label-registration-login1 {
+	top: 18%;
+	font-size: 15px;
+	color: lightgrey;
+}
+
+#label-registration-login2 {
+	top: 15%;
+	font-size: 15px;
+	color: red;
+	line-height: 0.9em;
+}
+
+#label-registration-Password1 {
+	  top: 35%;
+	  font-size: 15px;
+	  color: red;
+	  line-height: 0.9em;
+  }
+
+#label-registration-Password2 {
+	top: 50%;
+	font-size: 15px;
+	color: red;
+	line-height: 0.9em;
+}
+	
+#autorization-login {
+	top: 25%;
+}	
+
+#autorization-password {
+	top: 40%;
+}	
+
+#button-autorization {
+	top: 85%;
+}
+
+#registration-login {
+	top: 25%;
+}	
+
+#registration-password {
+	top: 40%;
+}	
+
+#registration-second-password {
+	top: 55%;
+}	
+
+#registration-email {
+	top: 70%;
+}	
+
+#button-registration {
+	top: 85%;
+}
+
+#label-enter {
+	position:relative;
+	left: 70%;
+	font-size: 25px;
+	font-family: GothicI;
+}
+
+#slider {
+   background: #EFEFEF;
+   border: 5px solid #eaeaea;
+   box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+   height: 320px;
+   width: 680px;
+   margin: auto ;
+   position: relative;
+   top: 40px;
+   overflow: hidden;
+}
+
+#slider ul {
+   margin: 0;
+   padding: 0;
+   position: relative;
+}
+
+#slider li {
+   width: 680px;
+   height: 320px; 
+   position: absolute;
+   top: -325px;	
+   list-style: none;
+}
+
+#slider li.firstanimation {
+   animation: cycle 25s linear infinite;
+}
+
+#slider li.secondanimation {
+   animation: cycletwo 25s linear infinite;
+}
+
+#slider li.thirdanimation {
+   animation: cyclethree 25s linear infinite;
+}
+
+#slider li.fourthanimation {
+   animation: cyclefour 25s linear infinite;
+}
+
+#slider li.fifthanimation {
+   animation: cyclefive 25s linear infinite;
+}
+
+@keyframes cycle {
+   0%  { top: 0; }
+   4%  { top: 0; }
+   16% { top: 0; opacity:1; }
+   20% { top: 325px; opacity: 0; } 
+   21% { top: -325px; opacity: 0; }
+   92% { top: -325px; opacity: 0;}
+   96% { top: -325px; opacity: 0; }
+   100%{ top: 0; opacity: 1; }
+}
+
+@keyframes cycletwo {
+   0%  { top: -325px; opacity: 0; }
+   16% { top: -325px; opacity: 0; }
+   20% { top: 0; opacity: 1; }
+   24% { top: 0; opacity: 1; }
+   36% { top: 0; opacity: 1; }
+   40% { top: 325px; opacity: 0; }
+   41% { top: -325px; opacity: 0;}
+   100%{ top: -325px; opacity: 0; }
+}
+
+@keyframes cyclethree {
+   0%  { top: -325px; opacity: 0; }
+   36% { top: -325px; opacity: 0; }
+   40% { top: 0; opacity: 1; }
+   44% { top: 0; opacity: 1; }
+   56% { top: 0; opacity: 1; }
+   60% { top: 325px; opacity: 0;}
+   61% { top: -325px; opacity: 0; }
+   100%{ top: -325px; opacity: 0; }
+}
+
+@keyframes cyclefour {
+   0%  { top: -325px; opacity: 0; }
+   56% { top: -325px; opacity: 0; }
+   60% { top: 0; opacity: 1; }
+   64% { top: 0; opacity: 1; }
+   76% { top: 0; opacity: 1; }
+   80% { top: 325px; opacity: 0; }
+   81% { top: -325px; opacity: 0; }
+   100%{ top: -325px; opacity: 0; }
+}
+@keyframes cyclefive {
+   0%  { top: -325px; opacity: 0; }
+   76% { top: -325px; opacity: 0; }
+   80% { top: 0; opacity: 1; }
+   84% { top: 0; opacity: 1; }
+   96% { top: 0; opacity: 1;  }
+   100%{ top: 325px; opacity: 0;  }
+}
