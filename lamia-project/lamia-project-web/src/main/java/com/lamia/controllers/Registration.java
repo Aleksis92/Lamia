@@ -24,7 +24,7 @@ public class Registration {
 
 	@RequestMapping(value = "/Registration", method = RequestMethod.POST)
 	public void RegistrationPost(HttpServletRequest request, HttpSession session, HttpServletResponse response) {
-
+//dsfsdfsd
 		if (Validation.checkLogin(request.getParameter("registration-login"))) {
 			Session hibernateSession = HibernateUtil.getSessionFactory().openSession();
 			if (hibernateSession.createQuery("from Users where login = '" + request.getParameter("registration-login") + "'").list().isEmpty()) {
