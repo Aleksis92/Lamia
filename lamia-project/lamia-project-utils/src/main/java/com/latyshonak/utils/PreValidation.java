@@ -1,8 +1,9 @@
 package com.latyshonak.utils;
 
 
-import com.latyshonak.dao.entity.Users;
+
 import com.latyshonak.dao.hibernate.HibernateUtil;
+import com.latyshonak.entity.Users;
 import org.hibernate.Session;
 
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class Validation {
+public class PreValidation {
 
 	public static boolean checkLogin(String check) {
 		Pattern p = Pattern.compile("^[a-zA-Z][a-zA-Z0-9-_\\.]{5,20}$");

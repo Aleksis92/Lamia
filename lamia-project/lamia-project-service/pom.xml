@@ -16,6 +16,11 @@
             <artifactId>lamia-project-dao</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>latyshonak</groupId>
+            <artifactId>lamia-project-entity</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 

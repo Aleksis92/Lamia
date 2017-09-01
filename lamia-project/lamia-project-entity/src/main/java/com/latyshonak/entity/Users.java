@@ -1,4 +1,4 @@
-package com.latyshonak.dao.entity;
+package com.latyshonak.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

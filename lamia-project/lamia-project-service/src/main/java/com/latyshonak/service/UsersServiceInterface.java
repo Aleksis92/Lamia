@@ -1,10 +1,11 @@
 package com.latyshonak.service;
 
-import com.latyshonak.dao.entity.Users;
+
+import com.latyshonak.entity.Users;
 
 import java.util.List;
 
-public interface UsersService {
+public interface UsersServiceInterface {
 
     List<Users> getAllUsers();
 

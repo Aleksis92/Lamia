@@ -10,6 +10,7 @@
     <module>lamia-project-service</module>
     <module>lamia-project-utils</module>
     <module>lamia-project-dao</module>
+      <module>lamia-project-entity</module>
   </modules>
   <packaging>pom</packaging>
 
