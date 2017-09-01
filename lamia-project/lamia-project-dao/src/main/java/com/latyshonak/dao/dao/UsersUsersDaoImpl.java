@@ -1,11 +1,10 @@
-package com.lamia.dao;
+package com.latyshonak.dao.dao;
 
+import com.latyshonak.dao.entity.Users;
+import com.latyshonak.dao.hibernate.HibernateUtil;
 import org.hibernate.Session;
 
-import com.lamia.entity.Users;
-import com.lamia.hibernate.HibernateUtil;
-
-public class DaoUsers implements DaoInterface<Users>{
+public class UsersUsersDaoImpl implements UsersDaoInterface<Users> {
 
 	@Override
 	public void insert(Users ob) {

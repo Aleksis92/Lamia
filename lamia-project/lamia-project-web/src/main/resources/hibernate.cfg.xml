@@ -10,6 +10,6 @@
         <property name="hibernate.connection.username">root</property> 
         <property name="show_sql">true</property> 
         
-        <mapping class="com.lamia.entity.Users"></mapping> 
+        <mapping class="com.latyshonak.dao.entity.Users"></mapping>
     </session-factory> 
 </hibernate-configuration>

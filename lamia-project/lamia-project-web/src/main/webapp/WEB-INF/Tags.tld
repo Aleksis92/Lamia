@@ -11,7 +11,7 @@
 
     <tag>
         <name>Registration</name>
-        <tag-class>com.lamia.tags.RegistrationTag</tag-class>
+        <tag-class>com.latyshonak.web.tags.RegistrationTag</tag-class>
         <body-content>empty</body-content>
     </tag>
 
