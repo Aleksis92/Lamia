@@ -1,11 +1,14 @@
-package com.latyshonak.dao.dao;
+package com.latyshonak.dao.Impl;
 
 
+import com.latyshonak.dao.UsersDao;
 import com.latyshonak.dao.hibernate.HibernateUtil;
 import com.latyshonak.entity.Users;
 import org.hibernate.Session;
+import org.springframework.stereotype.Repository;
 
-public class UsersDaoImpl implements UsersDaoInterface<Users> {
+@Repository
+public class UsersDaoImpl implements UsersDao<Users> {
 
 	@Override
 	public void insert(Users ob) {

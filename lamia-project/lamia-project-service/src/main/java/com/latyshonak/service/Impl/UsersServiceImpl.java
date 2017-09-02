@@ -1,12 +1,19 @@
 package com.latyshonak.service.Impl;
 
 
+import com.latyshonak.dao.UsersDao;
 import com.latyshonak.entity.Users;
-import com.latyshonak.service.UsersServiceInterface;
+import com.latyshonak.service.UsersService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public class UsersServiceImpl implements UsersServiceInterface{
+@Service
+public class UsersServiceImpl implements UsersService {
+
+    @Autowired
+    UsersDao userDao;
 
     @Override
     public List<Users> getAllUsers() {
@@ -15,7 +22,7 @@ public class UsersServiceImpl implements UsersServiceInterface{
 
     @Override
     public Users getUserById(Integer userId) {
-        return null;
+        return (Users)userDao.get(userId);
     }
 
     @Override
@@ -26,6 +33,12 @@ public class UsersServiceImpl implements UsersServiceInterface{
     @Override
     public void deleteUser(Integer userId) {
 
+    }
+
+    @Override
+    public void insertUser(String login, String password, String Email) {
+        Users user = new Users(login, password, Email);
+        userDao.insert(user);
     }
 
     @Override

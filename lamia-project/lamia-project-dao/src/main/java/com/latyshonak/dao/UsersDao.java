@@ -1,6 +1,6 @@
-package com.latyshonak.dao.dao;
+package com.latyshonak.dao;
 
-public interface UsersDaoInterface<T> {
+public interface UsersDao<T> {
 
 	void insert(T ob);
 	void update(T ob);

@@ -5,7 +5,7 @@ import com.latyshonak.entity.Users;
 
 import java.util.List;
 
-public interface UsersServiceInterface {
+public interface UsersService {
 
     List<Users> getAllUsers();
 
@@ -16,5 +16,7 @@ public interface UsersServiceInterface {
     Integer saveUser(Users user);
 
     void deleteUser(Integer userId);
+
+    void insertUser( String login, String password, String Email);
 
 }
