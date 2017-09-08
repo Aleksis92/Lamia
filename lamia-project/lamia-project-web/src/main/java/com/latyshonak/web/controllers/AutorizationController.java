@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
-public class Autorization {
+public class AutorizationController {
 
     @RequestMapping(value = "/Autorization", method = RequestMethod.POST)
     public String AutorizationPost(HttpSession session, HttpServletRequest request) {
@@ -34,11 +34,11 @@ public class Autorization {
         List<Users> list = (hibernateSession.createQuery("from Users where login='" + session.getAttribute("Login") + "'").list());
         if(list.get(0).getRole() == 1 ) {
             session.setAttribute("Role", 1);
-            return "moderatorsRoom";
+            return "redirect:ModeratorsRoom";
         }
         else {
             session.setAttribute("Role", 0);
-            return "index";
+            return "redirect:index";
         }
     }
 

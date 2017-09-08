@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="/WEB-INF/Tags.tld" prefix="m"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags/form" %>
 
 <%@ page contentType="text/html;charset=UTF-8"%>
 <!DOCTYPE>
@@ -18,12 +19,12 @@
 		<input type="button" id="button-window-autorization" value="Авторизация"> </input>
 		<div id="wrap"></div>
 		<div id="window">
-			<form id="autorization-form" action="Autorization" method="POST">
+			<spring:form id="autorization-form" action="Autorization" method="POST">
 				<label class="autorization-label content-autorization"> Авторизация </label>
-				<input id="autorization-login" name="autorization-login" class="content-autorization" placeholder="Введите логин" required> </input>
-				<input id="autorization-password" name="autorization-password" type="password" class="content-autorization" placeholder="Введите пароль" required> </input>
+				<input id="autorization-login" name="autorization-login" class="content-autorization" placeholder="Введите логин"> </input>
+				<input id="autorization-password" name="autorization-password" type="password" class="content-autorization" placeholder="Введите пароль"> </input>
 				<input id="button-autorization" type="submit" class="content-autorization" value="Авторизироваться"> </input>
-			</form>
+			</spring:form>
 			<form id="registration-form" action="Registration" method="POST">
 				<label class="autorization-label content-registration">Регистрация </label> 
 				<input id="registration-login" name="registration-login" class="content-registration" placeholder="Введите логин" required> </input>

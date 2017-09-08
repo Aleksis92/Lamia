@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller
-public class Registration {
+public class RegistrationController {
 
 	@RequestMapping(value = "/Registration", method = RequestMethod.POST)
 	public String RegistrationPost(HttpServletRequest request, HttpSession session) {
@@ -55,15 +55,14 @@ public class Registration {
 			UsersService userService = (UsersService) getBean(UsersService.class);
 			userService.insertUser(request.getParameter("registration-login"), request.getParameter("registration-password"),
 					request.getParameter("registration-email"));
-			System.out.println(userService.getUserById(5).getLogin());
 		}
-        return "redirect:Registration";
+		return "redirect:Registration";
 	}
-	
+
 
 	@RequestMapping(value = "/Registration", method = RequestMethod.GET)
 	public String RegistrationGet() {
-	return "index";
+		return "index";
 	}
 
 

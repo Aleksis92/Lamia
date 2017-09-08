@@ -7,13 +7,14 @@ import com.latyshonak.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
 public class UsersServiceImpl implements UsersService {
 
     @Autowired
-    UsersDao userDao;
+    private UsersDao userDao;
 
     @Override
     public List<Users> getAllUsers() {
@@ -37,8 +38,8 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public void insertUser(String login, String password, String Email) {
-        Users user = new Users(login, password, Email);
-        userDao.insert(user);
+
+        userDao.insert(new Users(login, password, Email));
     }
 
     @Override

@@ -54,6 +54,11 @@ public class Users {
 		this.e_mail = e_mail;
 	}
 
+	public Users(String login, String password) {
+		this.login = login;
+		this.password = password;
+	}
+
 
 
 	@Override
