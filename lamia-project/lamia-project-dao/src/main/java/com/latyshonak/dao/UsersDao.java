@@ -1,10 +1,10 @@
 package com.latyshonak.dao;
 
-public interface UsersDao<T> {
+import com.latyshonak.entity.Users;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-	void insert(T ob);
-	void update(T ob);
-	void delete(T ob);
-	T get(int id);
-	
+public interface UsersDao extends PagingAndSortingRepository<Users, Integer>{
+
+    Users findByLogin (String login);
+
 }

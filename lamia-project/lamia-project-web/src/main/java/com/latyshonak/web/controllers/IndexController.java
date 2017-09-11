@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-    @RequestMapping(value = "/index")
+    @RequestMapping(value = "/index.jsp")
     public String indexReturn () {
-        return "index";
+        return "redirect:index";
     }
 }

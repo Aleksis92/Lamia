@@ -15,6 +15,8 @@ public interface UsersService {
 
     Integer saveUser(Users user);
 
+    boolean checkUserByLogin(String login);
+
     void deleteUser(Integer userId);
 
     void insertUser( String login, String password, String Email);

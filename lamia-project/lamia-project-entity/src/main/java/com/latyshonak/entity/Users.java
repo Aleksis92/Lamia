@@ -189,9 +189,4 @@ public class Users {
 		this.e_mail = e_mail;
 	}
 
-
-
-
-
-
 }

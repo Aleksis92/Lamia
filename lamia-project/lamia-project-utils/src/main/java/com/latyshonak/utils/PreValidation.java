@@ -2,11 +2,8 @@ package com.latyshonak.utils;
 
 
 
-import com.latyshonak.dao.hibernate.HibernateUtil;
-import com.latyshonak.entity.Users;
-import org.hibernate.Session;
 
-import java.util.List;
+import com.latyshonak.entity.Users;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -45,18 +42,13 @@ public class PreValidation {
 		}
 	}
 
-	public static boolean checkAutorizationLogin(String login, String password) {
-		Session hibernateSession = HibernateUtil.getSessionFactory().openSession();
-		List<Users> list = (hibernateSession.createQuery("from Users where login='" + login + "'").list());
-		if (!list.isEmpty()) {
-			if (password.equals(list.get(0).getPassword())) {
-				return true;
-			}
+	public static boolean checkAutorizationLogin(Users userFromForm, Users userFromDatabase) {
+		if (userFromDatabase.getLogin().equals(userFromForm.getLogin()) &&
+				userFromDatabase.getPassword().equals(userFromForm.getPassword())) {
+			return true;
+		} else {
 			return false;
 		}
-		else {
-			return false;
-		}
-		}
+	}
 
 }
