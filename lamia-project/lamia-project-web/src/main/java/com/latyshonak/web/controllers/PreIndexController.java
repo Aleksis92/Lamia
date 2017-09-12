@@ -8,15 +8,14 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpSession;
 
 @Controller
-public class IndexController  {
+public class PreIndexController {
 
-    @RequestMapping(value = "/Index")
+    @RequestMapping(value = "/")
     public ModelAndView indexReturn (HttpSession session) {
         if (session.isNew()) {
             session.setAttribute("Autorization", "ignored");
             session.setAttribute("Login", "ignored");
-            session.setAttribute("Role", "ignored");
-        }
+            session.setAttribute("Role", "ignored");}
         return new ModelAndView("index", "userFromJSP", new Users());
     }
 }
