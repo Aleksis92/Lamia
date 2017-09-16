@@ -1,3 +1,5 @@
+/*Commons*/
+
 body {
 	margin: 0;
 }
@@ -49,40 +51,6 @@ body {
 	background-color: #141412;
 	width: 1000px;
 	height: 100%;	
-}
-
-#menu {
-	position: relative;
-	top:20%;
-	background-color: #FFFFFF;
-	width: 100%;
-	min-height: 2000px;
-	height: 70%;
-	float: left;
-}
-
-#moderators-menu {
-	position: relative;
-	top:0;
-	margin-left: 50%;
-	margin-right: 0;
-	background-color: #e4ffb4;
-	width: 50%;
-	min-width: 500px;
-	min-height: 2000px;
-	height: 100%;
-}
-
-#moderators-news {
-	position: relative;
-	top: 0;
-	margin-left: 0;
-	margin-right: 50%;
-	background-color: #b8e9ff;
-	width: 50%;
-	min-width: 500px;
-	min-height: 2000px;
-	height: 100%;
 }
 
 #info {
@@ -195,7 +163,7 @@ body {
 #label-registration-login1 {
 	top: 18%;
 	font-size: 15px;
-	color: lightgrey;
+	color: #4ed364;
 }
 
 #label-registration-login2 {
@@ -354,4 +322,70 @@ body {
    84% { top: 0; opacity: 1; }
    96% { top: 0; opacity: 1;  }
    100%{ top: 325px; opacity: 0;  }
+}
+
+/*Index*/
+#menu {
+	position: relative;
+	top:20%;
+	background-color: #FFFFFF;
+	width: 100%;
+	min-height: 2000px;
+	height: 70%;
+	float: left;
+}
+
+/*ModeratotsRoom*/
+#moderators-menu {
+	position: relative;
+	float: right;
+	background-color: #e4ffb4;
+	width: 50%;
+	min-height: 2000px;
+	height: 100%;
+}
+
+#moderators-news {
+	position: relative;
+	float: left;
+	background-color: #b8e9ff;
+	width: 50%;
+	min-height: 2000px;
+	height: 100%;
+}
+
+.content-moderators {
+	position: absolute;
+	font-family: GothicI;
+	font-size: 20px;
+	left:5%
+}
+
+.moderators-label {
+	position: absolute;
+	font-family: GothicI;
+	font-size: 30px;
+	left: 5%;
+}
+
+#moderators-news-label {
+	min-width: 400px;
+	min-height: 30px;
+	margin-top: 1%;
+	width: 50%;
+}
+
+#moderators-news-topic-text {
+	min-width: 400px;
+	min-height: 30px;
+	margin-top: 5%;
+	width: 70%;
+}
+
+#moderators-news-main-text {
+	min-width: 400px;
+	min-height: 150px;
+	margin-top: 10%;
+	width: 70%;
+	height: 12%;
 }

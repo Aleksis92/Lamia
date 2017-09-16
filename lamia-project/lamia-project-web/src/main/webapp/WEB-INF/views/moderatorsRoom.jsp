@@ -14,8 +14,9 @@
     <div id="menu">
         <div id="moderators-news"></div>
         <div id="moderators-menu">
-        <label id="moderators-label"> Добавить новость </label>
-        <input id="moderators-topic-text" name="moderators-topic-text" class="content-registration" placeholder="Введите заголовок новости" required>
+            <label id="moderators-news-label" class="moderators-label"> Добавить новость </label>
+            <input id="moderators-news-topic-text" name="moderators-news-topic-text" class="content-moderators" placeholder="Введите заголовок новости" required/>
+            <input id="moderators-news-main-text" name="moderators-news-main-text" class="content-moderators" type="text" placeholder="Введите текст новости" required/>
         </div>
     </div>
     <%@ include file="/WEB-INF/views/mainElements/footer.jsp" %>
