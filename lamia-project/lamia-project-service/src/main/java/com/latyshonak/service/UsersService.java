@@ -2,18 +2,19 @@ package com.latyshonak.service;
 
 
 import com.latyshonak.entity.Users;
+import com.latyshonak.service.beans.UsersBean;
 
 import java.util.List;
 
 public interface UsersService {
 
-    List<Users> getAllUsers();
+    List<UsersBean> getAllUsers();
 
-    Users getUserById(Integer userId);
+    UsersBean getUserById(Integer userId);
 
-    Users getUserByUserName(String userName);
+    UsersBean getUserByUserName(String userName);
 
-    Integer saveUser(Users user);
+    Integer saveUser(UsersBean user);
 
     boolean checkUserByLogin(String login);
 

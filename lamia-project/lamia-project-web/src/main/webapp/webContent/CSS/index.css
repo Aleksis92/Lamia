@@ -343,6 +343,7 @@ body {
 	width: 50%;
 	min-height: 2000px;
 	height: 100%;
+	top:20%;
 }
 
 #moderators-news {
@@ -352,7 +353,14 @@ body {
 	width: 50%;
 	min-height: 2000px;
 	height: 100%;
+	top:20%;
 }
+
+#editor1 {
+	position: relative;
+	top:20%;
+}
+
 
 .content-moderators {
 	position: absolute;

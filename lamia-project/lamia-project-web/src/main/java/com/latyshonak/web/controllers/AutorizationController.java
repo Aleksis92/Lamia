@@ -4,6 +4,7 @@ package com.latyshonak.web.controllers;
 
 import com.latyshonak.entity.Users;
 import com.latyshonak.service.UsersService;
+import com.latyshonak.service.beans.UsersBean;
 import com.latyshonak.utils.PreValidation;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class AutorizationController {
     private UsersService usersService;
 
     @RequestMapping(value = "/Autorization", method = RequestMethod.POST)
-    public String AutorizationPost(HttpSession session, HttpServletRequest request, @ModelAttribute("UserFromJSP") Users userFromJSP) {
+    public String AutorizationPost(HttpSession session, HttpServletRequest request, @ModelAttribute("UserFromJspAutorization") UsersBean userFromJSP) {
         if(PreValidation.checkAutorizationLogin(userFromJSP, usersService.getUserByUserName(userFromJSP.getLogin()))) {
          session.setAttribute("Autorization", "true");
          session.setAttribute("Login", userFromJSP.getLogin());

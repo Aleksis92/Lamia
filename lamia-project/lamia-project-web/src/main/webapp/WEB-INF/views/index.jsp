@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>****</title>
-		<link href="CSS/index.css" rel="stylesheet" type="text/css"/>
-		<script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="JS/index.js"></script>
+		<link href="webContent/CSS/index.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="webContent/JS/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="webContent/JS/index.js"></script>
 		<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="core" %>
 	</head>
 	<body id="body">

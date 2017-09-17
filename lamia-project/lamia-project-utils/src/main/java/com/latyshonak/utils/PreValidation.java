@@ -4,6 +4,8 @@ package com.latyshonak.utils;
 
 
 import com.latyshonak.entity.Users;
+import com.latyshonak.service.beans.UsersBean;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -42,7 +44,7 @@ public class PreValidation {
 		}
 	}
 
-	public static boolean checkAutorizationLogin(Users userFromForm, Users userFromDatabase) {
+	public static boolean checkAutorizationLogin(UsersBean userFromForm, UsersBean userFromDatabase) {
 		if (userFromDatabase.getLogin().equals(userFromForm.getLogin()) &&
 				userFromDatabase.getPassword().equals(userFromForm.getPassword())) {
 			return true;

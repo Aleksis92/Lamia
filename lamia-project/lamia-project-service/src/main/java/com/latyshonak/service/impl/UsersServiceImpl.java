@@ -1,9 +1,11 @@
-package com.latyshonak.service.Impl;
+package com.latyshonak.service.impl;
 
 
 import com.latyshonak.dao.UsersDao;
 import com.latyshonak.entity.Users;
+import com.latyshonak.service.EntityBeanConverter;
 import com.latyshonak.service.UsersService;
+import com.latyshonak.service.beans.UsersBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,19 +18,22 @@ public class UsersServiceImpl implements UsersService {
     @Autowired
     private UsersDao usersDao;
 
+    @Autowired
+    private EntityBeanConverter converter;
+
     @Override
-    public List<Users> getAllUsers() {
+    public List<UsersBean> getAllUsers() {
         return null;
     }
 
     @Override
-    public Users getUserById(Integer userId) {
-        return (Users)usersDao.findOne(userId);
+    public UsersBean getUserById(Integer userId) {
+        return converter.convertToBean(usersDao.findOne(userId), UsersBean.class);
     }
 
     @Override
-    public Users getUserByUserName(String userName) {
-        return usersDao.findByLogin(userName);
+    public UsersBean getUserByUserName(String userName) {
+        return converter.convertToBean(usersDao.findByLogin(userName), UsersBean.class);
     }
 
     @Override
@@ -43,7 +48,7 @@ public class UsersServiceImpl implements UsersService {
     }
 
     @Override
-    public Integer saveUser(Users user) {
+    public Integer saveUser(UsersBean user) {
         return null;
     }
 
